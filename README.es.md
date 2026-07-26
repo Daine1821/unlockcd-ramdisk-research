@@ -6,6 +6,18 @@ Espejo comunitario de **artefactos de investigación** extraídos del bundle **U
 
 ---
 
+## Contexto — por qué está este repo
+
+En la práctica, herramientas como UnlockCD suelen servir para **parchar u orquestar un arranque de ramdisk en vivo** (subidas en DFU/Recovery, kernel/ramdisk custom, SSH y luego trabajo en NAND). Nosotros extraímos y desciframos scripts y packs para **estudiar ese flujo**, pero **no dominamos el procedimiento real de punta a punta** que ejecuta la app Mac (sobre todo dentro de `start.sh` y `mnt2.macho`).
+
+**Si sabéis cómo encajan las piezas** — boot que salga de Recovery, qué blob de kernel usar, el orden de “patch en vivo” — **abrid un issue o PR.**  
+
+**Si estos archivos os sirven para montar `/mnt2` bien** (APFS estilo HFZ, carga SEP, rutas de activación), **contadnos qué funcionó** para documentarlo.
+
+La carpeta [`UnlockCD-Windows/`](UnlockCD-Windows/) es **material de laboratorio incompleto**, no una solución de boot terminada — leed [UnlockCD-Windows/README.md](UnlockCD-Windows/README.md).
+
+---
+
 ## Aviso legal (léelo primero)
 
 | | |
@@ -25,7 +37,7 @@ Espejo comunitario de **artefactos de investigación** extraídos del bundle **U
 | `decrypt_all_encrypted.py` | `start.sh`, `give.sh`, `restore.sh`, `mnt2.macho` |
 | `scripts_encrypted_extracted/` | Scripts macOS descifrados + `MANIFEST.txt` |
 | `mount_mnt2_extracted/` | Helpers mount/backup del `.app` |
-| `UnlockCD-Windows/` | Boot → SSH → mount (ver `SETUP_TOOLS.bat`) |
+| `UnlockCD-Windows/` | Kit `.bat` de **laboratorio incompleto** — [readme](UnlockCD-Windows/README.md) |
 | `ramdisks_extracted/` | IM4P, `boot_order.json`, `.dmg` universal, etc. (**pesado**, Git LFS) |
 
 ---
