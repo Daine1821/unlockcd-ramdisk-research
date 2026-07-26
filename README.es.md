@@ -38,7 +38,7 @@ La carpeta [`UnlockCD-Windows/`](UnlockCD-Windows/) es **material de laboratorio
 | `scripts_encrypted_extracted/` | Scripts macOS descifrados + `backup_activation_simple.sh` (texto plano del bundle) |
 | `mount_mnt2_extracted/` | Helpers mount/backup del `.app` |
 | `UnlockCD-Windows/` | Kit `.bat` de **laboratorio incompleto** — [readme](UnlockCD-Windows/README.md) |
-| `ramdisks_extracted/` | IM4P, `boot_order.json`, `.dmg` universal, etc. (**pesado**, Git LFS) |
+| `ramdisks_extracted/` | IM4P, `boot_order.json`, packs por dispositivo + **`universal_18.3/`**, **`universal_26.1/`** (`.dmg` en LFS) |
 
 ---
 
