@@ -1,0 +1,46 @@
+UnlockCD — extraccion mount / mnt2 / HFZ
+============================================
+Origen: UnlockCD-Ramdisk-V1.0.app\Contents\Resources
+
+scripts\  (desde .app + helpers Windows)
+  remote_mount_dynamic.sh   — montaje HFZ principal (/mnt1,/mnt6,/mnt7, SEP, /mnt2 Data, opcional /mnt8)
+  remote_mount_old.sh       — variante anterior
+  backup_activation.sh      — backup/restore activacion completo (SSH 2222)
+  backup_activation_simple.sh — backup ZIP 3 archivos
+  restore_tickets_remote.sh — restore tickets en /mnt2 (simplificado, kit Windows)
+  restore_from_zip.sh       — restore desde zip (kit Windows)
+
+plists\
+  disabled.plist            — launchd disabled (restore HFZ)
+
+restore_work_ejemplo\
+  restore.log               — corrida Mac OK con /mnt2 montado + tickets
+  summary.txt
+
+windows_helpers\
+  4_MOUNT.bat               — pipe remote_mount_dynamic.sh por SSH
+  5_MOUNT_CON_USER.bat      — mount + HFZ_MOUNT_USER=1 (/mnt8)
+  6_BACKUP_ACTIVACION_SIMPLE.bat
+  7_BACKUP_ACTIVACION_COMPLETO.bat
+  8_RESTORE_TICKETS.bat
+
+Variables utiles (remote_mount_dynamic.sh):
+  HFZ_SAFE_OBLIT=0|1|auto   — guard nvram oblit (default 0)
+  HFZ_MOUNT_USER=1            — montar /mnt8 (FairPlay/purplebuddy)
+
+NO incluido (cifrado / solo Mac / falta en LIGHT build):
+  start.sh / start.sh.enc     — orquesta boot + mount + restore completo
+  com.apple.purplebuddy.plist — referenciado en logs; no estaba en tools\ al extraer
+  UnlockCDRamdisk (binario)   — logica HFZ Restore Tickets clone
+
+Uso Windows (despues de SSH ramdisk):
+  cd ..\UnlockCD-Windows
+  2_SSH_PROXY.bat  +  4_MOUNT.bat
+  o copiar bats desde windows_helpers\ (necesitan _config.bat y tools del kit)
+
+Re-extraer desde .app:
+  ..\EXTRACT_MOUNT_MNT2.bat
+
+Descifrados (.enc en Resources):
+  ..\DESENCRIPTAR_TODO.bat  ->  ..\scripts_encrypted_extracted\
+  Copia en decrypted_from_enc\ (start.sh, give.sh, restore.sh, mnt2.macho + encrypted_sources\)

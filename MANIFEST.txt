@@ -1,0 +1,38 @@
+﻿Ramdisk tool manifest
+Generated: 2026-07-25 15:24:03
+
+DMG used: Yes
+DMG source: UnlockCD-Ramdisk-V1.0.dmg
+
+Total file count (under UnlockCD-Ramdisk-V1.0.app only): 146
+
+iPhone11_26.1.zip.enc: 63732608 bytes
+  Path: UnlockCD-Ramdisk-V1.0.app\Contents\Resources\ramdisks\iPhone11_26.1.zip.enc
+
+*.zip.enc files under root .app:
+  Contents\Resources\ramdisks\iPad8_18.3.zip.enc  (31696512 bytes)
+  Contents\Resources\ramdisks\iPad8_26.1.zip.enc  (33996384 bytes)
+  Contents\Resources\ramdisks\iPad9_18.3.zip.enc  (37201968 bytes)
+  Contents\Resources\ramdisks\iPad9_26.1.zip.enc  (39541072 bytes)
+  Contents\Resources\ramdisks\iPadAir3_18.3.zip.enc  (30873040 bytes)
+  Contents\Resources\ramdisks\iPadAir3_26.1.zip.enc  (33103104 bytes)
+  Contents\Resources\ramdisks\iPadmini5_18.3.zip.enc  (32348448 bytes)
+  Contents\Resources\ramdisks\iPadmini5_26.1.zip.enc  (34608496 bytes)
+  Contents\Resources\ramdisks\iPhone11_18.3.zip.enc  (59053408 bytes)
+  Contents\Resources\ramdisks\iPhone11_26.1.zip.enc  (63732608 bytes)
+  Contents\Resources\ramdisks\iPhone11Pro_18.3.zip.enc  (40435056 bytes)
+  Contents\Resources\ramdisks\iPhone11Pro_26.1.zip.enc  (43025024 bytes)
+  Contents\Resources\ramdisks\iPhone11ProMax_18.3.zip.enc  (38696928 bytes)
+  Contents\Resources\ramdisks\iPhone11ProMax_26.1.zip.enc  (41240160 bytes)
+  Contents\Resources\ramdisks\iPhoneSE2_18.3.zip.enc  (37753136 bytes)
+  Contents\Resources\ramdisks\iPhoneSE2_26.1.zip.enc  (40188544 bytes)
+  Contents\Resources\ramdisks\iPhoneXR_18.3.zip.enc  (56527120 bytes)
+  Contents\Resources\ramdisks\iPhoneXS_18.3.zip.enc  (38446736 bytes)
+  Contents\Resources\ramdisks\iPhoneXSMax_18.3.zip.enc  (36940368 bytes)
+  Contents\Resources\ramdisks\iPhoneXSMaxGlobal_18.3.zip.enc  (36901552 bytes)
+  Contents\Resources\ramdisks\universal_18.3.zip.enc  (135640416 bytes)
+  Contents\Resources\ramdisks\universal_26.1.zip.enc  (165185856 bytes)
+
+Contents\MacOS:
+  UnlockCDRamdisk  size=1014848 bytes
+Has MacOS executable: Yes

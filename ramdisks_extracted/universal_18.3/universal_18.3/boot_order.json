@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "sequence": [
+    {
+      "action": "component",
+      "name": "RestoreTrustCache",
+      "filename": "18.3.dmg.trustcache",
+      "irecv_command": "firmware",
+      "send_order": 0
+    },
+    {
+      "action": "component",
+      "name": "RestoreRamDisk",
+      "filename": "18.3.dmg",
+      "irecv_command": "ramdisk",
+      "send_order": 1
+    }
+  ]
+}

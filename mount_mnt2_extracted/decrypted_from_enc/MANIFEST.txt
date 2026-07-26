@@ -1,0 +1,14 @@
+UnlockCD encrypted assets — decrypted output
+Source: E:\OTROS ARCHIVOS IMPORTANTES\ramdisk tool\UnlockCD-Ramdisk-V1.0.app\Contents\Resources
+
+OK  give.sh.enc -> give.sh  KDF=HMAC-SHA256(script_prot,give.sh)
+OK  mnt2.enc -> mnt2.macho  KDF=HMAC-SHA256(script_prot,mnt2)
+OK  restore.sh.enc -> restore.sh  KDF=HMAC-SHA256(script_prot,restore.sh)
+OK  start.sh.enc -> start.sh  KDF=HMAC-SHA256(script_prot,start.sh)
+
+Scripts OK (4): give.sh.enc, mnt2.enc, restore.sh.enc, start.sh.enc
+Scripts FAIL (0):
+
+Script KDF (expected): derivedScriptKeyHexForScriptNamed:
+  protection string: UnlockCD-Ramdisk-v1-script-protection-key-2026
+  AES-256-CBC, IV from *.enc.iv, PKCS7 padding

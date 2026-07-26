@@ -1,0 +1,21 @@
+Ramdisks UnlockCD — desempaquetados (offline)
+============================================
+
+Si: los .zip.enc solos no sirven para boot en Windows; hay que descifrar + unzip.
+
+Hecho:
+  22 paquetes -> ramdisks_extracted\{model}_{version}.zip
+              -> ramdisks_extracted\{model}_{version}\{model}_{version}\  (imgs dentro)
+
+Tu iPhone 11 iOS 26.1:
+  E:\OTROS ARCHIVOS IMPORTANTES\ramdisk tool\ramdisks_extracted\iPhone11_26.1\iPhone11_26.1\
+  (iBSS, iBEC, kernelcache, sep-firmware, devicetree, coprocessors, boot_order.json)
+
+Repetir extraccion:
+  DESENPAQUETAR_RAMDISKS.bat
+  o: py -3 decrypt_all_ramdisks.py
+
+Clave (bundled, sin servidor): HMAC-SHA256 con el secret del .app + nombre "iPhone11_26.1"
+
+Siguiente paso Windows: img4/sign o copiar imgs al pack Aaron / Usbliter8Boot
+  (kernel parcheado UnlockCD vs Aaron — probar boot con estos .im4p/.raw)

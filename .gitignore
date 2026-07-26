@@ -1,0 +1,42 @@
+# --- No subir app comercial completa ni cifrados originales (opcional: Releases aparte) ---
+UnlockCD-Ramdisk-V1.0.app/
+**/work_full/
+**/extracted/
+**/restore_work/
+**/.last_device.tsv
+
+# Copias locales de ciphertext (ya tenéis scripts descifrados)
+**/encrypted_sources/
+*.zip.enc
+*.zip.enc.iv
+*.sha256
+
+# Temp / Windows
+Thumbs.db
+Desktop.ini
+*.tmp
+_aes_*.ps1
+_aes_once.ps1
+
+# Datos personales / activación (NUNCA)
+**/givefile/
+**/input/
+**/activation_record.plist
+**/IC-Info.sisv
+**/*Backup*.zip
+**/restore_work_ejemplo/
+
+# Herramientas de terceros (irecovery, iproxy, Usbliter8 — cada uno los descarga)
+UnlockCD-Windows/tools/*.exe
+UnlockCD-Windows/tools/*.dll
+UnlockCD-Windows/tools/irecovery*
+UnlockCD-Windows/tools/iproxy*
+UnlockCD-Windows/tools/lib*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Duplicados: elegid UNA carpeta en el repo (ver README)
+# mount_mnt2_extracted/decrypted_from_enc/

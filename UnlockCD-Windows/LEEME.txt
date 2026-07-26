@@ -1,0 +1,33 @@
+UnlockCD — Windows (flujo DMG / start.sh)
+=========================================
+
+Carpeta: UnlockCD-Windows\
+Device FW:  ..\ramdisks_extracted\iPhone11_26.1\iPhone11_26.1\
+Universal FW: ..\ramdisks_extracted\universal_26.1\universal_26.1\
+
+Setup
+-----
+SETUP_TOOLS.bat        — irecovery, iproxy, Usbliter8Boot en tools\
+VERIFICAR_FIRMWARE.bat — comprueba 26.1.dmg + trustcache universal
+
+Orden
+-----
+1) DFU + PWND usbliter8
+2) 1_BOOT.bat     (ibss.raw + iBEC + boot_order.json tal cual DMG)
+3) 2_SSH_PROXY.bat
+4) 4_MOUNT.bat / 5_MOUNT_CON_USER.bat
+
+1_BOOT.bat
+----------
+Fase DFU (como start.sh UnlockCD):
+  ibss.raw -> bootx -> iBEC.im4p -> go -> Usbliter8Boot (iBoot.patched.bin en tools\)
+
+Fase Recovery (boot_order.json):
+  boot-args: rd=md0 nand-enable-reformat=1 -progress
+  copro .im4p -> trustcache/ramdisk (26.1.dmg universal) -> DT -> SEP -> kernel -> bootx
+
+scripts\run_boot_order.py ejecuta la secuencia; alias 043-53775-129.dmg -> 26.1.dmg
+
+iBoot.patched.bin = salto usbliter8 generico (no es el pack Aaron; solo el .bin en tools\).
+
+Menu: 0_MENU.bat
