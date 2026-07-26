@@ -6,6 +6,9 @@ OK  mnt2.enc -> mnt2.macho  KDF=HMAC-SHA256(script_prot,mnt2)
 OK  restore.sh.enc -> restore.sh  KDF=HMAC-SHA256(script_prot,restore.sh)
 OK  start.sh.enc -> start.sh  KDF=HMAC-SHA256(script_prot,start.sh)
 
+Plain (never encrypted in bundle):
+  tools/backup_activation_simple.sh -> backup_activation_simple.sh
+
 Scripts OK (4): give.sh.enc, mnt2.enc, restore.sh.enc, start.sh.enc
 Scripts FAIL (0):
 

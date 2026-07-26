@@ -35,7 +35,7 @@ The [`UnlockCD-Windows/`](UnlockCD-Windows/) folder is explicitly **incomplete l
 |------|-------------|
 | `decrypt_all_ramdisks.py` | Decrypt `*.zip.enc` → `ramdisks_extracted/` |
 | `decrypt_all_encrypted.py` | Decrypt `start.sh`, `give.sh`, `restore.sh`, `mnt2.macho` |
-| `scripts_encrypted_extracted/` | Decrypted macOS-side scripts + `MANIFEST.txt` |
+| `scripts_encrypted_extracted/` | Decrypted macOS scripts (`start`, `give`, `restore`, `mnt2.macho`) + plain `backup_activation_simple.sh` |
 | `mount_mnt2_extracted/` | Mount/backup shell helpers from the `.app` |
 | `UnlockCD-Windows/` | **Incomplete** lab `.bat` kit — [readme](UnlockCD-Windows/README.md) |
 | `ramdisks_extracted/` | IM4P, `boot_order.json`, universal `.dmg`, etc. (**large**, Git LFS) |

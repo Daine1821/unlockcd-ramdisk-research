@@ -35,7 +35,7 @@ La carpeta [`UnlockCD-Windows/`](UnlockCD-Windows/) es **material de laboratorio
 |------|-------------|
 | `decrypt_all_ramdisks.py` | Descifra `*.zip.enc` → `ramdisks_extracted/` |
 | `decrypt_all_encrypted.py` | `start.sh`, `give.sh`, `restore.sh`, `mnt2.macho` |
-| `scripts_encrypted_extracted/` | Scripts macOS descifrados + `MANIFEST.txt` |
+| `scripts_encrypted_extracted/` | Scripts macOS descifrados + `backup_activation_simple.sh` (texto plano del bundle) |
 | `mount_mnt2_extracted/` | Helpers mount/backup del `.app` |
 | `UnlockCD-Windows/` | Kit `.bat` de **laboratorio incompleto** — [readme](UnlockCD-Windows/README.md) |
 | `ramdisks_extracted/` | IM4P, `boot_order.json`, `.dmg` universal, etc. (**pesado**, Git LFS) |
